@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Mark Baltes
  * Assembler.cpp
- * 4/19/15
+ *
  * Implementation file for Assembler class.
  *****************************************************************************/
 
@@ -11,7 +11,7 @@
  #include <sstream>
  #include <stdexcept>
 
-Assembler::Assembler() // constructor
+Assembler::Assembler() 
 {
     instr["load"] = &Assembler::load;
     instr["loadi"] = &Assembler::loadi;

@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Mark Baltes
  * VirtualMachine.h
- * 4/11/15
+ * 
  * Class description for VirtualMachine.
  
  The virtual machine initializes its memory from a .o file, enters a fetch
@@ -29,7 +29,7 @@
     std::map<int, FP> instr;
     int pc, ir, sr, sp, clock, base, limit;
 
-    // each instruction has its own function
+    // Each instruction has its own function.
     void load(int x);
     void store(int x);
     void add(int x);
@@ -40,9 +40,9 @@
     void xor_(int x);
     void compl_(int x);
     void shl(int x);
-    // void shla(int x); // Not clear on what the functions shla or shra do.
-    void shr(int x);     // Witheld for the moment.
-    // void shra(int x);
+    // void shla(int x); // Withheld for the moment.
+    void shr(int x);     
+    // void shra(int x); // Withheld for the moment.
     void compr(int x);
     void getstat(int x);
     void putstat(int x);

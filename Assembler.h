@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Mark Baltes
  * Assembler.h
- * 4/19/15
+ * 
  * Header file for Assembler class.
 
  The assembler parses a .s file containing commands for the OS, and outputs
@@ -17,10 +17,10 @@
  #include <string>
 
  class Assembler {
-    // define Function Pointer type
+    // Define Function Pointer type.
     typedef void (Assembler::*FP)(std::string);
 
-    // each instruction has its own function
+    // Each instruction has its own function.
     void load(std::string s);
     void loadi(std::string s);
     void store(std::string s);
@@ -57,7 +57,7 @@
     void noop(std::string s);
     void print(int n);
     
-    // the map
+    // The map.
     std::map<std::string, FP> instr;
     std::string file_name;
 public:

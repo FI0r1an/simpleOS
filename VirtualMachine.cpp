@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Mark Baltes
  * VirtualMachine.cpp
- * 4/25/15
+ * 
  * Implementation file for VirtualMachine class.
  *****************************************************************************/
 
@@ -30,9 +30,9 @@ VirtualMachine::VirtualMachine() // constructor
     instr[7] = &VirtualMachine::xor_; // xori inside
     instr[8] = &VirtualMachine::compl_;
     instr[9] = &VirtualMachine::shl;
-    // instr[10] = &VirtualMachine::shla;
+    // instr[10] = &VirtualMachine::shla; // Withheld.
     instr[11] = &VirtualMachine::shr;
-    // instr[12] = &VirtualMachine::shra;
+    // instr[12] = &VirtualMachine::shra; // Withheld.
     instr[13] = &VirtualMachine::compr; // compri inside
     instr[14] = &VirtualMachine::getstat;
     instr[15] = &VirtualMachine::putstat;
