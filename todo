@@ -1,0 +1,6 @@
+- Make OS be able to input any .s file, and have it create the other needed files.
+
+add5.s
+add5.out
+add5.in
+add5.o
